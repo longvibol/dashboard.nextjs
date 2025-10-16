@@ -1,5 +1,4 @@
 import { AppSidebar } from "@/components/app-sidebar";
-
 import { SiteHeader } from "@/components/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 
@@ -14,9 +13,15 @@ export default function Page({ children }: { children: React.ReactNode }) {
       }
     >
       <AppSidebar variant="inset" />
+
       <SidebarInset>
         <SiteHeader />
-        <div className="p-6">{children}</div>
+
+        <main className="p-2">
+          <div className="rounded-lg border p-4 bg-muted/10">
+            {children}
+          </div>
+        </main>
       </SidebarInset>
     </SidebarProvider>
   );

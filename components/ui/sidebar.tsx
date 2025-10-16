@@ -114,6 +114,7 @@ function SidebarProvider({
   // This makes it easier to style the sidebar with Tailwind classes.
   const state = open ? "expanded" : "collapsed"
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   const contextValue = React.useMemo<SidebarContextProps>(
     () => ({
       state,

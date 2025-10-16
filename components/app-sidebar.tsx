@@ -57,12 +57,12 @@ const data = {
     },
     {
       title: "Projects",
-      url: "#",
+      url: "/projects",
       icon: IconFolder,
     },
     {
       title: "Team",
-      url: "#",
+      url: "/team",
       icon: IconUsers,
     },
   ],
@@ -161,7 +161,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               {/** biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-              <a href="#">
+              <a href="https://freeland-nextjs.vercel.app/">
                 <IconInnerShadowTop className="!size-5" />
                 <span className="text-base font-semibold">Long Vibol</span>
               </a>
