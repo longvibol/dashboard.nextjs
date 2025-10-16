@@ -10,6 +10,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import FacebookEmbed from "@/components/ui/FacebookEmbed";
 
 export default function LandingPage() {
   return (
@@ -17,15 +18,7 @@ export default function LandingPage() {
       {/* Announcement Banner */}
       <div className="bg-accent/10 border-b border-accent/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center py-3">
-            <Badge variant="secondary" className="mr-3">
-              New
-            </Badge>
-            <p className="text-sm text-muted-foreground">
-              {"Announcing our $20M Series A funding round"}
-              <ArrowRight className="ml-2 h-4 w-4 inline" />
-            </p>
-          </div>
+
         </div>
       </div>
 
@@ -34,7 +27,7 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance mb-6 text-foreground">
-              The Complete Platform to{" "}
+              Popok Academy_NextJS {" "}
               <span className="text-accent">Build the Future</span>
             </h1>
             <p className="text-xl text-muted-foreground text-balance mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -52,7 +45,8 @@ export default function LandingPage() {
                 size="lg"
                 className="text-base px-8 bg-transparent"
               >
-                Watch Demo
+                <a href="https://www.facebook.com/profile.php?id=61555142585877">Watch Demo</a>
+                
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-4">
