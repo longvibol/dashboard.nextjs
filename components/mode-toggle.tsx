@@ -15,7 +15,7 @@ export function ModeToggle() {
   }, []);
 
   const toggleTheme = () => {
-    setTheme(resolvedTheme === "light" ? "light" : "dark");
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
   };
 
   if (!mounted) return null;
