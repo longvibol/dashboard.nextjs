@@ -38,13 +38,13 @@ export function NavHeader() {
               Pricing
             </Link>
             <Link
-              href="#about"
+              href="/signin"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               About
             </Link>
             <Link
-              href="#contact"
+              href="/signin"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact

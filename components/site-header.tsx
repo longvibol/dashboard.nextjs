@@ -1,7 +1,8 @@
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
-import { SidebarTrigger } from "@/components/ui/sidebar"
-import { ModeToggle } from "./mode-toggle"
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { SidebarTrigger } from "@/components/ui/sidebar";
+import { ModeToggle } from "./mode-toggle";
+import Link from "next/link";
 
 export function SiteHeader() {
   return (
@@ -16,17 +17,12 @@ export function SiteHeader() {
         <div className="ml-auto flex items-center gap-2">
           <ModeToggle></ModeToggle>
           <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
-            <a
-              href="/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="dark:text-foreground"
-            >
+            <Link href="/" className="dark:text-foreground">
               Home
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
     </header>
-  )
+  );
 }
