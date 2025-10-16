@@ -58,9 +58,12 @@ const Login = () => {
               <p>or</p>
               <Separator className="flex-1" />
             </div>
-            <Button className="w-full">
-              <Link href={"/"}>Home</Link>
-            </Button>
+            
+              <Link href={"/"}>
+              <Button className="w-full">Home</Button>
+              
+              </Link>
+   
 
             <Button variant="ghost" className="w-full" asChild>
               <a href="/">Sign in with google</a>
