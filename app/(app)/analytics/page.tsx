@@ -8,7 +8,7 @@ export default function LifeCyclePage(){
 
     return (
         <div>
-            <h1>Hello Analytic frmo {name} </h1>
+            <h1>Hello Analytic from {name} </h1>
 
             <p>My name is {getMyName("Hi","Vibol")}</p>
         </div>
